@@ -1,0 +1,451 @@
+# ! JUST READ - don't change the content of this file
+# Question structure extracted from survey.html
+student_id:
+  type: numeric
+  label: Enter your student id below and click next to get started
+'n':
+  type: numeric
+  label: a. How many individuals are included in the data?
+confidenceAa:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+four_hours_less:
+  type: numeric
+  label: b. How many sample members watched 4 hours of TV or less?
+confidenceAb:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+six_hours_less:
+  type: numeric
+  label: c. What percentage of the sample watched 6 hours of TV or less? (round to
+    the nearest 2 decimal places)
+confidenceAc:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+four_hours_more:
+  type: numeric
+  label: d. What percentage of sample members watched at least four hours of TV? (round
+    to the nearest 2 decimal places)
+confidenceAd:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mean:
+  type: numeric
+  label: 'MEAN:'
+median:
+  type: numeric
+  label: 'MEDIAN:'
+mode:
+  type: numeric
+  label: 'MODE:'
+confidenceAe1:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAe2:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAe3:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+distribution_shape:
+  type: textarea
+  label: f. How would you describe the shape of this distribution? Explain the basis
+    for your answer.
+confidenceAf:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+central_tendency:
+  type: textarea
+  label: g. Which measure of central tendency do you think is most appropriate for
+    this distribution and why?
+confidenceAg:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+range:
+  type: numeric
+  label: 'RANGE:'
+sd:
+  type: numeric
+  label: 'STANDARD DEVIATION:'
+confidenceAh1:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAh2:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+comparison:
+  type: textarea
+  label: []
+confidenceAi:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc1:
+  type: select
+  label: []
+  options:
+    nominal: a
+    ordinal: b
+    inferential: c
+    interval: d
+    continuous: e
+confidenceB1:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc2:
+  type: select
+  label: []
+  options:
+    interval and continuous: a
+    interval and discrete: b
+    nominal and discrete: c
+    ordinal and continuous: d
+    ordinal and nominal: e
+confidenceB2:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc3:
+  type: select
+  label: []
+  options:
+    discrete: a
+    random: b
+    undefined: c
+    independent: d
+    mutually exclusive: e
+confidenceB3:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc4:
+  type: select
+  label: []
+  options:
+    the arithmetic average of the distribution: a
+    the highest score in the distribution: b
+    the cumulative frequency of 50: c
+    the most common score: d
+    the 50th percentile: e
+confidenceB4:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc5:
+  type: select
+  label: []
+  options:
+    nominal: a
+    ordinal: b
+    inferential: c
+    interval: d
+    all of the above: e
+confidenceB5:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc6:
+  type: select
+  label: []
+  options:
+    range: a
+    standard deviation: b
+    mode: c
+    median: d
+    mean: e
+confidenceB6:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc7:
+  type: select
+  label: []
+  options:
+    Random is the same as haphazard or unpredictable.: a
+    Random phenomena are never actually observed in the real world.: b
+    With a random phenomenon the outcome of any one trial is known before the trial.: c
+    With a random phenomenon the outcome for one trial depends on previous outcomes.: d
+    With a random phenomenon there is a predictable pattern to the outcomes over the long run.: e
+confidenceB7:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc8:
+  type: select
+  label: []
+  options:
+    The total area under the curve equals 1: a
+    The height of the curve gives exact probabilities: b
+    The distribution must be symmetric: c
+    Values with zero height on the curve have zero probability: d
+    It can only be used with normally distributed data: e
+confidenceB8:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc9:
+  type: select
+  label: []
+  options:
+    draw conclusions about a population using information taken from a sample.: a
+    summarize the distribution of a variable.: b
+    determine the representativeness of a non-probability sample.: c
+    find the proportion of cases under various segments of the normal distribution.: d
+    All of the above.: e
+confidenceB9:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc10:
+  type: select
+  label: []
+  options:
+    standard deviation: a
+    mean: b
+    median: c
+    mode: d
+    range: e
+confidenceB10:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc11:
+  type: select
+  label: []
+  options:
+    a random set of our respondents refuse to answer a particular survey question.: a
+    we report too many different measures of central tendency or variability.: b
+    we rely on data from a sample that does not represent the population of interest.: c
+    we use a survey instead of in-depth interviews to collect our data.: d
+    All of the above.: e
+confidenceB11:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc12:
+  type: select
+  label: []
+  options:
+    stratified random sample: a
+    simple random sample: b
+    convenience sample: c
+    snowball sample: d
+    merit sample: e
+confidenceB12:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc13:
+  type: select
+  label: []
+  options:
+    it measures the distance from the mode, median, and mean simultaneously: a
+    it is not affected by unusually high or unusually low scores in the distribution: b
+    it takes into consideration the value of every score in the distribution: c
+    it is appropriate for all levels of measurement: d
+    all of the above: e
+confidenceB13:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc14:
+  type: select
+  label: []
+  options:
+    standard difference: a
+    mean difference: b
+    variance: c
+    deviation: d
+    mode: e
+confidenceB14:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc15:
+  type: select
+  label: []
+  options:
+    '620': a
+    '650': b
+    '710': c
+    '585': d
+    '470': e
+confidenceB15:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc16:
+  type: select
+  label: []
+  options:
+    ? If you flip a fair coin 5 times and the result is 'heads' each time, the likelihood
+      of flipping  a 'tails' on the next flip is increased.
+    : a
+    If you flip a fair coin 10 times, you are sure to get 5 'heads' and 5 'tails.': b
+    Over thousands of rolls of a fair 6-sided die, about 1/6 of the roles should result in a '3.': c
+    All of these statements are true.: d
+confidenceB16:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc17:
+  type: select
+  label: []
+  options:
+    '1.0': a
+    '0.75': b
+    '0.50': c
+    '0.25': d
+    '0': e
+confidenceB17:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc18:
+  type: select
+  label: []
+  options:
+    '0.5184': a
+    '0.4032': b
+    '0.2016': c
+    '0.144': d
+    '0.28': e
+confidenceB18:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc19:
+  type: select
+  label: []
+  options:
+    93.32%: a
+    43.32%: b
+    34.13%: c
+    15.32%: d
+    6.68%: e
+confidenceB19:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+mc20:
+  type: select
+  label: []
+  options:
+    66.00 and 74.00 inches: a
+    64.00 and 76.00 inches: b
+    63.44 and 76.56 inches: c
+    62.16 and 77.84 inches: d
+    58.00 and 82.00 inches: e
+confidenceB20:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+

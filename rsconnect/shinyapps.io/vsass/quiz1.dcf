@@ -1,0 +1,10 @@
+name: quiz1
+title:
+username: vsass
+account: vsass
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15072908
+bundleId: 10613343
+url: https://vsass.shinyapps.io/quiz1/
+version: 1

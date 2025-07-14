@@ -1,0 +1,2199 @@
+---
+format: 
+  html: 
+    html-math-method: webtex
+    theme: simplex
+barcolor: "#20c997"
+echo: false
+warning: false
+footer: "Made with [surveydown](https://surveydown.org)"
+---
+
+```{r}
+#| echo: false
+library(surveydown)
+```
+
+::: {.sd_page id=pre}
+
+<div style="
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+">
+
+  <a href="https://vsass.shinyapps.io/soc221_quiz1/"
+     style="
+       white-space: nowrap;
+       font-size: clamp(1rem, 6vw, 3rem);
+       text-decoration: none;
+       font-weight: bold;
+       color: #4b2e83;
+     ">
+    https://vsass.shinyapps.io/soc221_quiz1/
+  </a>
+
+</div>
+
+```{r}
+sd_next(next_page = "start")
+
+#sd_next(label = "Get started")
+```
+
+:::
+
+::: {.sd_page id=start}
+
+# Quiz 1
+
+## SOC 221 | Summer 2025
+
+Now that you've had the opportunity to discuss with a classmate/classmates how you approached each problem (and your answers), let's go over each question as a class. 
+
+Before we work through how to do each problem, submit your most recent answer and corresponding confidence assessment. 
+
+```{r}
+sd_question(
+  type  = "numeric",
+  id    = "student_id",
+  label = "Enter your student id below and click next to get started"
+)
+```
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_a}
+
+**PART A: Fill in the blank**
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected
+from a sample of American adults to draw her conclusions. She starts by examining the number
+of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'n')
+```
+
+:::
+
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceAa")
+```
+
+:::
+
+::::
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+
+::: {.sd_page id=written_problem_a_results}
+
+<br>
+
+The class distributions for the answer and associated confidence levels are shown below. Correct answers are shown in [orange]{style="color: #d96629"} and your answer/selection is shown via dashed black line. 
+
+<br>
+
+```{r}
+shiny::plotOutput('Aa_dist_plot')
+```
+
+<br>
+
+```{r}
+shiny::plotOutput('Aa_confidence_plot')
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_a_answer}
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+### Answer
+
+<br>
+
+You can find the total $N$ of this sample by looking at the last row of the cumulative frequency column (Cf) or by adding up the entire frequency column (f):
+
+<br>
+
+$$ 
+22 + 43 + 66 + 51 + 14 + 4 + 2 = 202
+$$
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_b}
+
+**PART A: Fill in the blank**
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'four_hours_less')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceAb")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_b_results}
+
+<br>
+
+The class distributions for the answer and associated confidence levels are shown below. Correct answers are shown in [orange]{style="color: #d96629"} and your answer/selection is shown via dashed black line. 
+
+<br>
+
+```{r}
+shiny::plotOutput('Ab_dist_plot')
+```
+
+<br>
+
+```{r}
+shiny::plotOutput('Ab_confidence_plot')
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_b_answer}
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+### Answer
+
+<br>
+
+You can find this cumulative frequency by looking at the row of the cumulative frequency column (Cf) associated with 4 hours or less of television or by adding up the frequency column (f) for values 0, 2, 3, and 4:
+
+<br>
+
+$$ 
+22 + 43 + 66 + 51 = 182
+$$
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_c}
+
+**PART A: Fill in the blank**
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'six_hours_less')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceAc")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_c_results}
+
+<br>
+
+The class distributions for the answer and associated confidence levels are shown below. Correct answers are shown in [orange]{style="color: #d96629"} and your answer/selection is shown via dashed black line. 
+
+<br>
+
+```{r}
+shiny::plotOutput('Ac_dist_plot')
+```
+
+<br>
+
+```{r}
+shiny::plotOutput('Ac_confidence_plot')
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_c_answer}
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+### Answer
+
+<br>
+
+You can find this cumulative percentage by looking at the row of the cumulative percentage column (C%) associated with 6 hours or less of television or by adding up the % column (%) for values 0, 2, 3, 4, 5, and 6:
+
+<br>
+
+$$ 
+10.89 + 21.29 + 32.67 + 25.25 + 6.93 + 1.98 = 99.01
+$$
+
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_d}
+
+**PART A: Fill in the blank**
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'four_hours_more')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceAd")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_d_results}
+
+<br>
+
+The class distributions for the answer and associated confidence levels are shown below. Correct answers are shown in [orange]{style="color: #d96629"} and your answer/selection is shown via dashed black line. 
+
+<br>
+
+```{r}
+shiny::plotOutput('Ad_dist_plot')
+```
+
+<br>
+
+```{r}
+shiny::plotOutput('Ad_confidence_plot')
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_d_answer}
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+### Answer
+
+<br>
+
+You can find this cumulative percentage by adding up the % column (%) for values 4, 5, 6, and 12:
+
+<br>
+
+$$ 
+25.25 + 6.93 + 1.98 + 0.99 = 35.15
+$$
+<br> 
+
+or by subtracting the cumulative percentage column for 3 hours or less from 100%: 
+
+<br> 
+
+$$
+100 - 64.85 = 35.15
+$$
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_e}
+
+**PART A: Fill in the blank**
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+e. Calculate the following measures of central tendency to describe the number of hours of TV watched.
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mean')
+
+sd_question(id = 'median')
+
+sd_question(id = 'mode')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceAe1")
+
+sd_question(id = "confidenceAe2")
+
+sd_question(id = "confidenceAe3")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_e_results}
+
+<br>
+
+The class distributions for the answer and associated confidence levels are shown below. Correct answers are shown in [orange]{style="color: #d96629"} and your answer/selection is shown via dashed black line. 
+
+<br>
+
+```{r}
+shiny::plotOutput('Ae_dist_plot')
+```
+
+<br>
+
+```{r}
+shiny::plotOutput('Ae_confidence_plot')
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_e_answer}
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+## Answer
+
+<br>
+
+Calculate the **mean**: 
+
+<br>
+
+$$ 
+\frac{(0*22) + (2*43) + (3*66) + (4*51) + (5*14) + (6*4) + (12*2)}{202} = \frac{606}{202} = 3
+$$
+
+<br> 
+
+We can find the **median** by looking for which value contains the 50th percentile: 
+
+<br> 
+
+$$
+3\text{ hours} = 32.19\% - 64.85\% 
+$$
+
+<br>
+
+The **mode** will be the row that contains the largest frequency (f) / percentage (%):
+
+$$
+3\text{ hours} = 66 = 32.67\%
+$$
+<br> 
+
+```{r}
+sd_next()
+```
+
+
+:::
+
+::: {.sd_page id=written_problem_f}
+
+**PART A: Fill in the blank**
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'distribution_shape')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceAf")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_f_answer}
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+### Answer
+
+<br> 
+
+The distribution appears to be **SYMMETRICAL** since:
+
+- the mean, median, and mode are all the same
+- the frequency distribution shows high level of clustering with few big outliers
+
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_g}
+
+**PART A: Fill in the blank**
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'central_tendency')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceAg")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_g_answer}
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+### Answer
+
+<br> 
+
+Since the variable is measured at the interval level, mean is generally preferable given that it considers the most information. [and there is no indication that the use of the mean provides a misleading picture of central tendency]. 
+
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_h}
+
+**PART A: Fill in the blank**
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+h. Calculate the following measures of variability for the amount of TV watched.
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'range')
+
+sd_question(id = 'sd')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceAh1")
+
+sd_question(id = "confidenceAh2")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_h_results}
+
+<br>
+
+The class distributions for the answer and associated confidence levels are shown below. Correct answers are shown in [orange]{style="color: #d96629"} and your answer/selection is shown via dashed black line. 
+
+<br>
+
+```{r}
+shiny::plotOutput('Ah_dist_plot')
+```
+
+<br>
+
+```{r}
+shiny::plotOutput('Ah_confidence_plot')
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=written_problem_h_answer}
+
+<br>
+
+Professor Iwannatenure is interested in studying how television exposure affects Americans’ social attitudes. Given limited resources, the good professor will rely on information collected from a sample of American adults to draw her conclusions. She starts by examining the number of hours of TV watched by this group of adults per day, summarizing the distribution in the following frequency table.
+
+| # of Hours  | f | % |  Cf | C%  |
+|:--------:|:------:|:---:|:---:|:---:|
+| 0  | 22  | 10.89 | 22.00 | 10.89 | 
+| 2  | 43  | 21.29 | 65.00 | 32.18 | 
+| 3  | 66  | 32.67 | 131.00 | 64.85  | 
+| 4  | 51  | 25.25 | 182.00 | 90.10  | 
+| 5  | 14  | 6.93  | 196.00 | 97.03  | 
+| 6  | 4   | 1.98 | 200.00 | 99.01  | 
+| 12 | 2   | 0.99 | 202 | 100  | 
+
+: {tbl-colwidths="[20]"}
+
+<br>
+
+### Answer
+
+Calculate the **range**: 
+
+<br>
+
+$$ 
+12-0 = 12
+$$
+
+<br> 
+
+Calculate the **standard deviation**:
+
+<br> 
+
+$$
+\sqrt{\frac{[(0-3)^2*22] + [(2-3)^2 * 43] + [(3-3)^2 * 66] + [(4-3)^2 * 51] + [(5-3)^2 * 14] + [(6-3)^2 * 4] + [(12-3)^2 * 2]}{202 - 1}} = 
+$$
+<br>
+
+$$
+\sqrt{\frac{[9 *22] + [1 * 43] + [0 * 66] + [1 * 51] + [4 * 14] + [9 * 4] + [81 * 2]}{201}} = 
+$$
+<br>
+
+$$
+\sqrt{\frac{198 + 43 + 0 + 51 + 56 + 36 + 162}{201}} = 
+$$
+<br>
+
+$$
+\sqrt{\frac{546}{201}} = 
+$$
+
+<br> 
+
+$$
+\sqrt{2.716418} = 1.648156 \text{ or} \approx 1.648
+$$
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+
+::: {.sd_page id=written_problem_i}
+
+**PART A: Fill in the blank**
+
+<br>
+
+i. For the sake of comparison, Professor Iwannatenure compares her data on adults to data from a large sample of children. The descriptive statistics for the number of hours of TV watched by the sample of children look like this:
+
+<br>
+
+$$
+\hspace{1cm}\bar{X} = 5.5\hspace{1cm}Median = 3.5\hspace{1cm}Mode = 3.0\hspace{1cm}Range = 20\hspace{1cm}s_X = 2.8
+$$
+
+<br>
+
+Using this information and the statistics you calculated above, describe how the adults compare to the children in terms of the amount of TV watched and in terms of the diversity of the amount of TV watched. Refer to the specific numbers you use to reach your conclusions.
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'comparison')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceAi")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+
+::: {.sd_page id=written_problem_i_answer}
+
+<br>
+
+i. For the sake of comparison, Professor Iwannatenure compares her data on adults to data from a large sample of children. The descriptive statistics for the number of hours of TV watched by the sample of children look like this:
+
+<br>
+
+$$
+\hspace{1cm}\bar{X} = 5.5\hspace{1cm}Median = 3.5\hspace{1cm}Mode = 3.0\hspace{1cm}Range = 20\hspace{1cm}s_X = 2.8
+$$
+
+<br>
+
+Using this information and the statistics you calculated above, describe how the adults compare to the children in terms of the amount of TV watched and in terms of the diversity of the amount of TV watched. Refer to the specific numbers you use to reach your conclusions.
+
+<br>
+
+Mean *and* median (safer to use since children's distribution seems to be skewed) are higher for children than adults indicating a higher amount of TV watching among children.
+
+<br>
+
+The range and standard deviation are both higher for children than for adults indicating more diversity among children.
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_1}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc1')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB1")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_1_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B1_heatmap', height = "500px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_2}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc2')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB2")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_2_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B2_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_3}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc3')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB3")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_3_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B3_heatmap', height = "500px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_4}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc4')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB4")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_4_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B4_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_5}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc5')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB5") 
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_5_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B5_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_6}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc6')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB6")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_6_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B6_heatmap', height = "500px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_7}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc7')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB7")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_7_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B7_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_8}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc8')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB8")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_8_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B8_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_9}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc9')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB9")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_9_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B9_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_10}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc10')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB10") 
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_10_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B10_heatmap', height = "500px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_11}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc11')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB11") 
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_11_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B11_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_12}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc12')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB12")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_12_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B12_heatmap', height = "500px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_13}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc13')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB13")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_13_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B13_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_14}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc14')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB14")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_14_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B14_heatmap', height = "500px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_15}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc15')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB15")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_15_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B15_heatmap', height = "500px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_16}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc16')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB16") 
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_16_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B16_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_17}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc17')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB17")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_17_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B17_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_18}
+
+**PART B: Multiple Choice**
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc18')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB18")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_18_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B18_heatmap', height = "500px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_19}
+
+**PART B: Multiple Choice**
+
+<br>
+
+*For the last two questions, use the [standard normal table](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3671.htm) or a [z-score calculator](https://www.calculator.net/z-score-calculator.html) and consider the following: the distribution of heights for men is normally distributed with a mean of 70 inches and a standard deviation of 4 inches.*
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc19')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB19")
+```
+
+:::
+
+::::
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_19_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B19_heatmap', height = "500px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_19_answer}
+
+If we plug the numbers we know into the [z score calculator](https://www.calculator.net/z-score-calculator.html) we can see that the probability of being 76 inches or taller is:
+
+<br>
+
+$$ 
+\approx 0.066807 \text{ or } 6.68\%
+$$
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_20}
+
+**PART B: Multiple Choice**
+
+<br>
+
+*For the last two questions, use the [standard normal table](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3671.htm) or a [z-score calculator](https://www.calculator.net/z-score-calculator.html) and consider the following: the distribution of heights for men is normally distributed with a mean of 70 inches and a standard deviation of 4 inches.*
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="74%"}
+
+```{r}
+sd_question(id = 'mc20')
+```
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+sd_question(id = "confidenceB20")
+```
+
+:::
+
+::::
+
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_20_results}
+
+<br>
+
+Below is a joint distribution of the class' answers and associated confidence levels. Darker colors denote a greater joint frequency. The correct answer is shown in [orange]{style="color: #d96629"} and your answer is labeled. 
+
+<br>
+
+```{r}
+shiny::plotOutput(outputId = 'B20_heatmap', height = "600px")
+```
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+::: {.sd_page id=mc_20_answer}
+
+We know that a z-score of 1.96 on either side of the standardized normal distribution mean of 0 is going to equal 95% of the distribution. Therefore, we just need to solve our equation for $X$ instead of $z$:
+
+<br>
+
+$$ 
+X = \mu + z\sigma
+$$
+<br>
+
+$$ 
+X = 70 \pm 1.96(4)
+$$
+<br>
+
+$$ 
+X = 70 \pm 7.84
+$$
+<br>
+
+$$ 
+X = 70 \pm 7.84
+$$
+<br>
+
+$$ 
+X = 62.16 - 77.84
+$$
+
+<br>
+
+```{r}
+sd_next()
+```
+
+:::
+
+
+::: {.sd_page id=end}
+
+## Thanks for taking our survey!
+
+```{r}
+sd_close("Exit This Survey")
+```
+
+:::

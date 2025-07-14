@@ -1,0 +1,454 @@
+# ! JUST READ - don't change the content of this file
+# Question structure extracted from survey.html
+
+## Student ID
+student_id:
+  type: numeric
+  label: Enter your student id below and click next to get started
+
+## PART A QUESTIONS
+'n':
+  type: numeric
+  label: a. How many individuals are included in the data?
+four_hours_less:
+  type: numeric
+  label: b. How many sample members watched 4 hours of TV or less?
+six_hours_less:
+  type: numeric
+  label: c. What percentage of the sample watched 6 hours of TV or less? *(round to the nearest 2 decimal places)*
+four_hours_more:
+  type: numeric
+  label: d. What percentage of sample members watched at least four hours of TV? *(round to the nearest 2 decimal places)*
+mean:
+  type: numeric
+  label: 'MEAN:'
+median:
+  type: numeric
+  label: 'MEDIAN:'
+mode:
+  type: numeric
+  label: 'MODE:'
+distribution_shape:
+  type: textarea
+  label: f. How would you describe the shape of this distribution? Explain the basis for your answer.
+central_tendency:
+  type: textarea
+  label: g. Which measure of central tendency do you think is most appropriate for this distribution and why?
+range:
+  type: numeric
+  label: 'RANGE:'
+sd:
+  type: numeric
+  label: 'STANDARD DEVIATION:'
+comparison:
+  type: textarea
+  label: []
+
+## PART B QUESTIONS
+mc1:
+  type: select
+  label: 1. What is the level of measurement for a variable with categories that can be put in order but with no consistent distance between the categories?
+  options:
+    nominal: a
+    ordinal: b
+    inferential: c
+    interval: d
+    continuous: e
+mc2:
+  type: select
+  label: 2. A variable indicating the number of pounds of garbage produced by a sample of Americans is...
+  options:
+    interval and continuous: a
+    interval and discrete: b
+    nominal and discrete: c
+    ordinal and continuous: d
+    ordinal and nominal: e
+mc3:
+  type: select
+  label: 3. If the occurrence of one event or outcome does not affect the chance the other occurs, the events are considered...
+  options:
+    discrete: a
+    random: b
+    undefined: c
+    independent: d
+    mutually exclusive: e
+mc4:
+  type: select
+  label: 4. The median of a distribution is the value at...
+  options:
+    the arithmetic average of the distribution: a
+    the highest score in the distribution: b
+    the cumulative frequency of 50: c
+    the most common score: d
+    the 50th percentile: e
+mc5:
+  type: select
+  label: 5. The cumulative frequency column of a frequency table is inappropriate for variables measured at which of the following levels of measurement.
+  options:
+    nominal: a
+    ordinal: b
+    inferential: c
+    interval: d
+    all of the above: e
+mc6:
+  type: select
+  label: 6. Which of the following is the best measure for describing the central tendency of a variable measuring the racial identification of a sample of students.
+  options:
+    range: a
+    standard deviation: b
+    mode: c
+    median: d
+    mean: e
+mc7:
+  type: select
+  label: 7. Which of the following is a TRUE statement about random phenomena?
+  options:
+    Random is the same as haphazard or unpredictable.: a
+    Random phenomena are never actually observed in the real world.: b
+    With a random phenomenon the outcome of any one trial is known before the trial.: c
+    With a random phenomenon the outcome for one trial depends on previous outcomes.: d
+    With a random phenomenon there is a predictable pattern to the outcomes over the long run.: e
+mc8:
+  type: select
+  label: 8. Which of the following is true about a probability density function (PDF) for a continuous variable?
+  options:
+    The total area under the curve equals 1: a
+    The height of the curve gives exact probabilities: b
+    The distribution must be symmetric: c
+    Values with zero height on the curve have zero probability: d
+    It can only be used with normally distributed data: e
+mc9:
+  type: select
+  label: 9. Inferential statistics are used to...
+  options:
+    draw conclusions about a population using information taken from a sample.: a
+    summarize the distribution of a variable.: b
+    determine the representativeness of a non-probability sample.: c
+    find the proportion of cases under various segments of the normal distribution.: d
+    All of the above.: e
+mc10:
+  type: select
+  label: 10. Which of the following measure of central tendency can be misleading if the distribution of the variable is highly skewed?
+  options:
+    standard deviation: a
+    mean: b
+    median: c
+    mode: d
+    range: e
+mc11:
+  type: select
+  label: 11. The results of our statistical analysis is likely to be biased if...
+  options:
+    a random set of our respondents refuse to answer a particular survey question.: a
+    we report too many different measures of central tendency or variability.: b
+    we rely on data from a sample that does not represent the population of interest.: c
+    we use a survey instead of in-depth interviews to collect our data.: d
+    All of the above.: e
+mc12:
+  type: select
+  label: 12. Standing in front of Kane Hall to find people willing to complete a survey would provide which kind of sample?
+  options:
+    stratified random sample: a
+    simple random sample: b
+    convenience sample: c
+    snowball sample: d
+    merit sample: e
+mc13:
+  type: select
+  label: 13. The standard deviation is considered superior to the range for indicating the variability of a set of scores because...
+  options:
+    it measures the distance from the mode, median, and mean simultaneously: a
+    it is not affected by unusually high or unusually low scores in the distribution: b
+    it takes into consideration the value of every score in the distribution: c
+    it is appropriate for all levels of measurement: d
+    all of the above: e
+mc14:
+  type: select
+  label: 14. The difference between a single score in a distribution and the mean of the distribution of scores is referred to as the...
+  options:
+    standard difference: a
+    mean difference: b
+    variance: c
+    deviation: d
+    mode: e
+mc15:
+  type: select
+  label: 15. Suppose SAT math scores are normally distributed with a mean of 520 and a standard deviation of 100. What score marks the top 10% of the distribution?
+  options:
+    '620': a
+    '650': b
+    '710': c
+    '585': d
+    '470': e
+mc16:
+  type: select
+  label: 16. Which of the following is a true statement?
+  options:
+    If you flip a fair coin 5 times and the result is 'heads' each time, the likelihood of flipping  a 'tails' on the next flip is increased.: a
+    If you flip a fair coin 10 times, you are sure to get 5 'heads' and 5 'tails.': b
+    Over thousands of rolls of a fair 6-sided die, about 1/6 of the roles should result in a '3.': c
+    All of these statements are true.: d
+mc17:
+  type: select
+  label: 17. What is the probability of flipping “heads” on two consecutive flips of a fair coin?
+  options:
+    '1.0': a
+    '0.75': b
+    '0.50': c
+    '0.25': d
+    '0': e
+mc18:
+  type: select
+  label: 18. A researcher finds that the probability a randomly chosen adult uses social media daily is 0.72. What is the probability that in a random sample of two adults, exactly one uses social media daily?
+  options:
+    '0.5184': a
+    '0.4032': b
+    '0.2016': c
+    '0.144': d
+    '0.28': e
+mc19:
+  type: select
+  label: 19. Based on the information above, what percentage of men are 76 inches or taller?
+  options:
+    '93.32%': a
+    '43.32%': b
+    '34.13%': c
+    '15.32%': d
+    '6.68%': e
+mc20:
+  type: select
+  label: 20. What two values of height define the middle 95% of men in the distribution?
+  options:
+    66.00 and 74.00 inches: a
+    64.00 and 76.00 inches: b
+    63.44 and 76.56 inches: c
+    62.16 and 77.84 inches: d
+    58.00 and 82.00 inches: e
+
+## CONFIDENCE ASSESSMENTS
+confidenceAa:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAb:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAc:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAd:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAe1:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAe2:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAe3:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAf:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAg:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAh1:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAh2:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceAi:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB1:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB2:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB3:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB4:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB5:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB6:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB7:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB8:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB9:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB10:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB11:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB12:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB13:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB14:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB15:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB16:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB17:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB18:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB19:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+confidenceB20:
+  type: mc_buttons
+  label: []
+  options:
+    "\U0001F60E": confident
+    "\U0001F914": unsure
+    "\U0001F630": lost
+
+
