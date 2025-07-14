@@ -26,7 +26,7 @@ library(surveydown)
   padding: 0;
 ">
 
-  <a href="https://vsass.shinyapps.io/soc221_quiz1/"
+  <a href="https://vsass-soc221-quiz1.share.connect.posit.cloud"
      style="
        white-space: nowrap;
        font-size: clamp(1rem, 6vw, 3rem);
@@ -34,7 +34,7 @@ library(surveydown)
        font-weight: bold;
        color: #4b2e83;
      ">
-    https://vsass.shinyapps.io/soc221_quiz1/
+    https://vsass-soc221-quiz1.share.connect.posit.cloud
   </a>
 
 </div>
